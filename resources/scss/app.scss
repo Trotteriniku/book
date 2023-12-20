@@ -13,3 +13,34 @@ $fa-font-path: "../webfonts" !default;
 h1{
     color: $text-color;
 }
+
+.gradient-background {
+    background: linear-gradient(300deg,#5b84c4,#f98125,#fb9b50);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  .shadow_card{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    &:hover{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 12px 16px, rgba(0, 0, 0, 0.3) 0px 21px 39px -12px, rgba(0, 0, 0, 0.2) 0px -12px 0px inset;
+
+        h3{
+            filter: brightness(1000);;
+        }
+    }
+  }

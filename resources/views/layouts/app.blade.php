@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="gradient-background">
     @include('partials.header')
     @yield('content')
     @include('partials.footer')
