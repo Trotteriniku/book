@@ -10,9 +10,13 @@ $fa-font-path: "../webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-h1{
-    color: $text-color;
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
 }
+
+
 
 .gradient-background {
     background: linear-gradient(300deg,#5b84c4,#f98125,#fb9b50);

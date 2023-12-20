@@ -3,14 +3,20 @@
 
 @section('content')
 
-    <ul>
-        @foreach ($movies as $movie)
-            <a href="{{ route('movies.show', $movie->id) }}">
-                <li>{{ $movie->original_title }}</li>
+    <div class="container">
+        <div class="row row-cols-5 justify-content-center  align-items-center gap-3  text-center  ">
 
-            </a>
-        @endforeach
-    </ul>
+            @foreach ($movies as $movie)
+                <div class="card" style=" background-color:#222222;">
+                    <img class="card-img-top" src="{{ $movie->image }}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">{{ $movie->title }}</h5>
 
+                    </div>
+                </div>
+            @endforeach
+
+        </div>
+    </div>
 
 @endsection
